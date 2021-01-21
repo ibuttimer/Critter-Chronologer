@@ -92,15 +92,15 @@ Each entry in this collection contains information in its `Body` tab if necessar
 ## Implementation
 The following are the key features of the implementation:
 
-* The Customer and Employee functionality has been split between two controllers; [CustomerController](src/main/java/com/udacity/jdnd/course3/critter/controller/CustomerController.java) and [EmployeeController](src/main/java/com/udacity/jdnd/course3/critter/controller/EmployeeController.java) 
+* The Customer and Employee functionality has been split between two controllers; [CustomerController](starter/critter/src/main/java/com/udacity/jdnd/course3/critter/controller/CustomerController.java) and [EmployeeController](starter/critter/src/main/java/com/udacity/jdnd/course3/critter/controller/EmployeeController.java) 
 * The main application has been configured to use an external MySQL database.
 
-   Please run the [create_schema.sql](src/main/resources/create_schema.sql) SQL script in MySQL Workbench to create the schema and user required. 
+   Please run the [create_schema.sql](starter/critter/src/main/resources/create_schema.sql) SQL script in MySQL Workbench to create the schema and user required. 
 
 * In addition to the `CritterFunctionalTest.java` tests, additional tests have been included in:
-   * [src/test/java/com/udacity/jdnd/course3/critter/controller](src/test/java/com/udacity/jdnd/course3/critter/controller)
-   * [src/test/java/com/udacity/jdnd/course3/critter/schedule](src/test/java/com/udacity/jdnd/course3/critter/schedule)
-   * [src/test/java/com/udacity/jdnd/course3/critter/user](src/test/java/com/udacity/jdnd/course3/critter/user)
+   * [src/test/java/com/udacity/jdnd/course3/critter/controller](starter/critter/src/test/java/com/udacity/jdnd/course3/critter/controller)
+   * [src/test/java/com/udacity/jdnd/course3/critter/schedule](starter/critter/src/test/java/com/udacity/jdnd/course3/critter/schedule)
+   * [src/test/java/com/udacity/jdnd/course3/critter/user](starter/critter/src/test/java/com/udacity/jdnd/course3/critter/user)
 
 ## License
 

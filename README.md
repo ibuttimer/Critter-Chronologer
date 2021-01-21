@@ -2,6 +2,20 @@
 
 Critter Chronologer a Software as a Service application that provides a scheduling interface for a small business that takes care of animals. This Spring Boot project will allow users to create pets, owners, and employees, and then schedule events for employees to provide services for pets.
 
+Original code available at https://github.com/udacity/nd035-c3-data-stores-and-persistence-project-starter as part of [Java Web Developer Nanodegree](https://www.udacity.com/course/java-developer-nanodegree--nd035)
+by Udacity
+
+# Table of Contents
+1. [Getting Started](#getting-started)
+   1. [Dependencies](#dependencies)
+   1. [Installation](#installation)
+1. [Testing](#testing)
+    1. [Tested Conditions](#tested-conditions)
+    1. [Postman](#postman)
+1. [Built With](#built-with)
+1. [Implementation](#implementation)
+1. [License](#license)
+
 
 ## Getting Started
 
@@ -74,6 +88,19 @@ Each entry in this collection contains information in its `Body` tab if necessar
 * [Google Guava](https://github.com/google/guava) - A set of core libraries used in this project for their collections utilities.
 * [H2 Database Engine](https://www.h2database.com/html/main.html) - An in-memory database used in this project to run unit tests.
 * [MySQL Connector/J](https://www.mysql.com/products/connector/) - JDBC Drivers to allow Java to connect to MySQL Server
+
+## Implementation
+The following are the key features of the implementation:
+
+* The Customer and Employee functionality has been split between two controllers; [CustomerController](src/main/java/com/udacity/jdnd/course3/critter/controller/CustomerController.java) and [EmployeeController](src/main/java/com/udacity/jdnd/course3/critter/controller/EmployeeController.java) 
+* The main application has been configured to use an external MySQL database.
+
+   Please run the [create_schema.sql](src/main/resources/create_schema.sql) SQL script in MySQL Workbench to create the schema and user required. 
+
+* In addition to the `CritterFunctionalTest.java` tests, additional tests have been included in:
+   * [src/test/java/com/udacity/jdnd/course3/critter/controller](src/test/java/com/udacity/jdnd/course3/critter/controller)
+   * [src/test/java/com/udacity/jdnd/course3/critter/schedule](src/test/java/com/udacity/jdnd/course3/critter/schedule)
+   * [src/test/java/com/udacity/jdnd/course3/critter/user](src/test/java/com/udacity/jdnd/course3/critter/user)
 
 ## License
 

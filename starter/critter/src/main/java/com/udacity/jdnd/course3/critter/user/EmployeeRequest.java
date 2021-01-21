@@ -4,23 +4,22 @@ import java.time.LocalDate;
 import java.util.Set;
 
 /**
- * Represents a request to find available employees by skills. Does not map
- * to the database directly.
+ * Represents a request to find available employees by skills.
  */
-public class EmployeeRequestDTO {
+public class EmployeeRequest {
     private Set<EmployeeSkill> skills;
     private LocalDate date;
 
-    public EmployeeRequestDTO() {
+    public EmployeeRequest() {
     }
 
-    public EmployeeRequestDTO(Set<EmployeeSkill> skills, LocalDate date) {
+    public EmployeeRequest(Set<EmployeeSkill> skills, LocalDate date) {
         this.skills = skills;
         this.date = date;
     }
 
-    public static EmployeeRequestDTO of(Set<EmployeeSkill> skills, LocalDate date) {
-        return new EmployeeRequestDTO(skills, date);
+    public static EmployeeRequest of(Set<EmployeeSkill> skills, LocalDate date) {
+        return new EmployeeRequest(skills, date);
     }
 
     public Set<EmployeeSkill> getSkills() {
